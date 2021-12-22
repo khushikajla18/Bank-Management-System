@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Banking Management System</title>
+    <style>
+        body {
+            background: url('img.jpg') no-repeat center center/cover;
+        }
+
+        .navbar {
+            background-color: red;
+            border-radius: 12px;
+            padding: 2px 2px;
+
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            padding: 23 px 7 px;
+            margin: 9 px 10 px;
+        }
+
+        .navbar li a {
+            padding: 2px 72px;
+            margin: 2px 9px;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        .navbar li a:hover {
+            color: grey;
+        }
+
+        .logo {
+            text-align: center;
+            background-color: #bcad90d1;
+            margin: 3px 400px;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        #slideshow {
+            display: flex;
+        }
+
+        #slideshow #btn3 img {
+            height: 400px;
+            width: 900px;
+            /* display: block; */
+        }
+
+        #slideshow #btn3 {
+            border: 2px solid white;
+            margin-left: -58px;
+        }
+
+        #btn1 {
+            padding-top: 183px;
+            margin: 2px 848px;
+            margin-left: -1020px;
+        }
+
+        #btn2 {
+            padding: 2px 2px;
+            margin: -22px 2px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="indexps.html">Home</a></li>
+                    <li><a href="about.html">About-us</a></li>
+                    <li><a href="student_login.html">Login</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+
+        </section>
+        <div class="logo">
+            <h1 style="font-size: 50px">INDIAN BANK</h1>
+        </div>
+        <section class="logo" id="slideshow">
+            <section id="btn3">
+                <img class="mySlides" src="img3.jpg">
+                <img class="mySlides" src="img4.jpg">
+                <img class="mySlides" src="img5.jpg">
+                <img class="mySlides" src="img6.jpg">
+            </section>
+            <section class="btn">
+                <section id="btn1">
+                    <button id="b1" class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                </section>
+                <section id="btn2">
+                    <button id="b2" class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </section>
+            </section>
+        </section>
+
+        <section>
+            <div class="sec_img">
+
+                <div class="logo">
+
+                    <h1> BANKING MANAGEMENT SYSTEM</h1>
+                    <h1 style=" font-size: 35px">Safest Banking Since 2021</h1>
+                    <h1>Financial Hub Of Indians</h1>
+                    <h1>Banking in one click</h1>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+
+            <p>
+                Email:&nbsp khushi002btit20@igdtuw.ac.in,jhanvi024btit20@igdtuw.ac.in<br>
+                Mobile:&nbsp &nbsp +(91)7217735868 <br>
+                Address: Saket,New Delhi-110068
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length };
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+</html>

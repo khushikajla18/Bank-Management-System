@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            background: url('img.jpg') no-repeat center center/cover;
+            color: black;
+            text-align: center;
+            font-family: Lucida Console
+        }
+
+        .navbar {
+            background-color: red;
+            border-radius: 12px;
+            padding: 2px 2px;
+
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            padding: 23 px 7 px;
+            margin: 9 px 10 px;
+            /* border: 2 px solid blue; */
+        }
+
+        .navbar li a {
+            padding: 2px 72px;
+            margin: 2px 9px;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        .navbar li a:hover {
+            color: grey;
+        }
+
+        .logo {
+            text-align: center;
+            background-color: #bcad90d1;
+            margin: 3px 400px;
+            padding: 10px 2px;
+            font-size: 20px;
+        }
+
+        #form {
+            background-color: #ff8d00b3;
+            margin: 2px 576px;
+            padding: 2px 2px;
+        }
+
+        #forminside .login div {
+            padding: 15px 2px;
+            margin: 2px 2px;
+        }
+
+        #btn {
+            cursor: pointer;
+        }
+
+        .login #btn:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="indexps.html">Home</a></li>
+            <li><a href="about.html">About-us</a></li>
+            <li><a href="student_login.html">Login</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="reg_img">
+            <br>
+            <div class="logo">
+                <h1> BANKING MANAGEMENT SYSTEM</h1>
+            </div>
+            <div class="box2">
+                <section id="form">
+                    <h1> User Registration Form</h1>
+                    <form name="Registration" action="" id="forminside">
+                        <div class="login">
+                            <div>
+                                <label for="fn">First Name</label>
+                                <input type="text" name="First" id="fn" placeholder="First Name" required="">
+                            </div>
+                            <div>
+                                <label for="ln">Last Name</label>
+                                <input type="text" name="Last" id="ln" placeholder="Last Name" required="">
+                            </div>
+                            <div>
+                                <label for="username1">Username</label>
+                                <input type="text" name="username" id="username1" placeholder="Username" required="">
+                            </div>
+                            <div>
+                                <label for="password1">Password</label>
+                                <input type="password" name="password" id="password1" placeholder="Password"
+                                    required="">
+                            </div>
+                            <div>
+                                <label for="emailid">Email Id</label>
+                                <input type="text" name="email" id="emailid" placeholder="Email" required="">
+                            </div>
+                            <div>
+                                <button id="btn">Sign Up</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </section>
+            </div>
+
+        </div>
+
+    </section>
