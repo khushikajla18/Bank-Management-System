@@ -1,0 +1,48 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body{
+min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1,h2{
+    color:rgb(245, 16, 8);
+    position:absolute;
+    
+}
+.side-menu {
+    position:absolute;
+    background: #645d56ec;
+    width: 20vw;
+    min-height: 100vh;
+    display:block;
+    flex-direction: column;
+    align-items:baseline;
+}
+.side-menu .khushi-name{
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.side-menu li {
+    font-size: 24px;
+    padding:20px 40px;
+    color:rgb(45, 11, 240);
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover {
+background:rgb(240, 243, 241);
+color:rgb(4, 8, 0);
+
+}
